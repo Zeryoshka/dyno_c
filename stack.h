@@ -9,7 +9,7 @@
 
 // Структура для описания узла стека
 typedef struct{
-    struct Node_stack* next;
+    Node_stack* next;
     Data_dyno_type data;
 } Node_stack;
 

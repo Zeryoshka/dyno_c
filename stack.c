@@ -14,7 +14,7 @@ Stack* init_stack(Stack* stack) {
 
 // Добавление элемента в стек
 void push(Stack* stack, Data_dyno_type data) {
-    Node_stack* node = malloc(sizeof(Node_stack));
+    Node_stack* node = (Node_stack*) malloc(sizeof(Node_stack));
     node->data = data;
 
     node->next = stack->start;

@@ -7,7 +7,7 @@
 
 // Инициализация стека
 Stack* init_stack(Stack* stack) {
-    Stack* stack = malloc(sizeof(Stack));
+    Stack* stack = (Stack*) malloc(sizeof(Stack));
     stack->start = NULL;
     return stack;
 }

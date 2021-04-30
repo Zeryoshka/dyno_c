@@ -1,7 +1,6 @@
 //stack.cpp
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "stack.h"
 #include "data_dyno_type.h"
 

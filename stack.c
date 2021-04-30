@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "stack.h"
-#include "data_type_dyno_c.h"
+#include "data_dyno_type.h"
 
 // Инициализация стека
 Stack* init_stack(Stack* stack) {

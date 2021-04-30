@@ -4,7 +4,7 @@
 #define STACK_H
 
 
-#include "data_type_dyno_c.h"
+#include "data_dyno_type.h"
 
 
 // Структура для описания узла стека

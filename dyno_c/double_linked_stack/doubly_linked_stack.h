@@ -1,7 +1,7 @@
 // doubly_linked_stack.h
 
-#ifndef STACK_H
-#define STACK_H
+#ifndef DOUBLY_LINKED_STACK_H
+#define DOUBLY_LINKED_STACK_H
 
 
 #include "../data_dyno_type.h"

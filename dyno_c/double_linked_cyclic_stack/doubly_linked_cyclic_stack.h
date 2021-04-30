@@ -29,10 +29,10 @@ void push(Doubly_linked_cyclic_stack* stack, Data_dyno_type data);
 // Удаляет элемент из двусвязного стека и возвращает его назад
 Data_dyno_type pop(Doubly_linked_cyclic_stack* stack);
 
-// Проверяет двусвязный стек на пустоту
+// Проверяет двусвязный цкилический стек на пустоту
 int is_empty(Doubly_linked_cyclic_stack* stack);
 
-// Просмотреть верхний элемент двусвязного стека
+// Просмотреть верхний элемент двусвязного цкилического стека
 Data_dyno_type top(Doubly_linked_cyclic_stack* stack);
 
 #endif

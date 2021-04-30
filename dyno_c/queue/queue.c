@@ -24,7 +24,8 @@ NodeQ* newNodeQ(Data_dyno_type data){
 
 Queue* createQueue(){
     Queue* queue = (Queue*)malloc(sizeof(Queue));
-    queue->front = queue->rear = NULL;
+    queue->front = NULL;
+    queue->rear = NULL;
     return queue;
 }
 
@@ -46,14 +47,13 @@ int lenQueue(Queue *q){
             len += 1;
             temp = temp->next;
         }
-
         return len;
     }
 }
 
 void enQueue(Queue* q, Data_dyno_type data){
     NodeQ* new = newNodeQ(data);
-    if(q->rear == NULL){
+    if(q->front == NULL){
         q->front = new;
         q->rear = new;
         return;
@@ -76,7 +76,7 @@ void deQueue(Queue* q){
 }
 
 void printQueue(Queue* q){ // right now works only for integer
-    if(is_emptyQueue(q) == 1)
+    if(q->front == NULL)
         printf("Queue is empty\n");
     else{
         NodeQ *tmp = q->front;

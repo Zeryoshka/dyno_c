@@ -3,7 +3,7 @@
 #ifndef STACK_H
 #define STACK_H
 
-#include "data_dyno_type.h"
+#include "../data_dyno_type.h"
 
 
 // Структура для описания узла циклического стека
@@ -14,7 +14,8 @@ typedef struct{
 
 // Структура для циклического стека
 typedef struct {
-    Node_cyclic_stack* start;
+    Node_cyclic_stack* top;
+    Node_cyclic_stack* bottom;
 } Cyclic_stack;
 
 // Инициализация циклического стека

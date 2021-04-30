@@ -1,4 +1,4 @@
-//stack.cpp
+//stack.c
 
 #include <stddef.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-//stack.cp
+//stack.cpp
 
 #include <stddef.h>
 #include "cyclic_stack.h"

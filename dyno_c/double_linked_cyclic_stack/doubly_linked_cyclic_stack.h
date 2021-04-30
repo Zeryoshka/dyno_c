@@ -17,6 +17,7 @@ typedef struct{
 // Структура для двусвязного циклического стека
 typedef struct {
     Node_doubly_linked_cyclic_stack* start;
+    Node_doubly_linked_cyclic_stack* end;
 } Doubly_linked_cyclic_stack;
 
 // Инициализация двусвязного циклического стека

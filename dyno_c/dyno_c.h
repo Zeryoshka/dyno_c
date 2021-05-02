@@ -4,7 +4,7 @@
 #define DYNO_C_H
 
 
-#include "queue/queue.h"
+#include "doubly_queue/doubly_queue.h"
 #include "data_dyno_type.h"
 
 

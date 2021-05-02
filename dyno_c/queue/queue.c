@@ -72,14 +72,24 @@ void deQueue(Queue* q){
         q->rear == NULL;
 
     free(temp);
+}
 
+int searchQueue(Queue* q, Data_dyno_type data){ // rewrite if u want to use it
+    NodeQ* temp = q->front;
+    while(temp){
+        if(temp->data == data)
+            return 1;
+        
+        temp = temp->next;
+    }
+    return 0;
 }
 
 void printQueue(Queue* q){ // right now works only for integer
     if(q->front == NULL)
         printf("Queue is empty\n");
     else{
-        NodeQ *tmp = q->front;
+        NodeQ* tmp = q->front;
         while(tmp){
             printf("%4d\n", tmp->data);
             tmp = tmp->next;

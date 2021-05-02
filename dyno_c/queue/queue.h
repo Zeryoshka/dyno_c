@@ -35,6 +35,9 @@ void enQueue(Queue* q, Data_dyno_type data);
 // Remove top element from Queue
 void deQueue(Queue* q);
 
+// Lookup for data in Queue, found -> 1 else 0
+int searchQueue(Queue* q, Data_dyno_type data); // works only for integer
+
 // Print Queue from first to last
 void printQueue(Queue* q); // right now works only for integer
 

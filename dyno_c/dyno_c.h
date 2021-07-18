@@ -8,6 +8,7 @@
 #include "stack/stack.h"
 #include "double_linked_stack/doubly_linked_stack.h"
 #include "cyclic_stack/cyclic_stack.h"
-
+#include "queue/queue.h"
+#include "doubly_queue.h"
 
 #endif

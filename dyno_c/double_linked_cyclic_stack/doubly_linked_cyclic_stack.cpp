@@ -6,6 +6,7 @@
 
 
 // Инициализация двусвязного циклического стека
+// Doubly cyclic stack initialization
 Doubly_linked_cyclic_stack* init_doubly_linked_cyclic_stack() {
     Doubly_linked_cyclic_stack* stack = new Doubly_linked_cyclic_stack;
     stack->start = NULL;
@@ -14,6 +15,7 @@ Doubly_linked_cyclic_stack* init_doubly_linked_cyclic_stack() {
 }
 
 // Добавление элемента в двусвязный стек
+// Push element to doubly linked cyclic stack
 void push(Doubly_linked_cyclic_stack* stack, Data_dyno_type data) {
     Node_doubly_linked_cyclic_stack* node = new Node_doubly_linked_cyclic_stack;
     node->data = data;
@@ -34,6 +36,7 @@ void push(Doubly_linked_cyclic_stack* stack, Data_dyno_type data) {
 }
 
 // Удаляет элемент из двусвязного стека и возвращает его назад
+// Remove top element and return it
 Data_dyno_type pop(Doubly_linked_cyclic_stack* stack) {
     Data_dyno_type data = stack->start->data;
     Node_doubly_linked_cyclic_stack* new_top = stack->start;
@@ -50,11 +53,13 @@ Data_dyno_type pop(Doubly_linked_cyclic_stack* stack) {
 }
 
 // Проверяет двусвязный цкилический стек на пустоту
+// Check if stack is empty
 int is_empty(Doubly_linked_cyclic_stack* stack) {
     return stack->start == NULL;
 }
 
 // Просмотреть верхний элемент двусвязного цкилического стека
+// Return top element
 Data_dyno_type top(Doubly_linked_cyclic_stack* stack) {
     return stack->start->data;
 }
